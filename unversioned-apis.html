@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+
+    <title>MSANose Report</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">𝜇Sensor</a>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Bad Smells
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Overview</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="shared-libraries.html">Shared Libraries</a></li>
+                            <li><a class="dropdown-item" href="unversioned-apis.html">Unversioned API</a></li>
+                            <li><a class="dropdown-item" href="shared-persistence.html">Shared Persistence</a></li>
+                            <li><a class="dropdown-item" href="inappropriate-service-intimacy.html">Inappropriate Service Intimacy (ISI)</a></li>
+                            <li><a class="dropdown-item" href="hardcoded-endpoints.html">Hardcoded Endpoints</a></li>
+                            <li><a class="dropdown-item" href="esb.html">Enterprise Service Bus Usage (ESB)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="p-5 mb-5">
+        <div class="bd-intro">
+            <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="https://github.com/edson-a-soares/msanose-action" title="View and edit this file on GitHub" target="_blank" rel="noopener">View More on GitHub</a>
+                <h2 class="bd-title" id="content">Unversioned APIs</h2>
+            </div>
+            <p class="bd-lead">All Application Programming Interfaces (API) should be versioned to keep track of changes properly</p>
+        </div>
+        <hr/>
+
+        <section>
+            <div class="row">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Endpoint</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>/securityConfigs</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>/payment</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>/welcome</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>/assurance/orderid/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>/prices/welcome</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>/contacts/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>/contacts/account/{accountId}</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>/order/query</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>/trainfoods/{tripId}</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>/{userName}</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>/adminbasic/contacts/{contactsId}</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>/id/{userId}</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>/routes</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>/assurances/{typeIndex}/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>/payment/money</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>/adminbasic/trains/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>/hello</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>/order/{travelDate}/{trainNumber}</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>/assurances/orderid/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>/foodstores/welcome</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>/assurances/assuranceid/{assuranceId}</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>/adminbasic/trains</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>/createOrderBatch</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>/securityConfigs/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>/orders/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>/test_send_mail</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>/cancel/refound/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>/foodstores</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>/adminorder</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>/orderOther/{travelDate}/{trainNumber}</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>/adminbasic/configs/{name}</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>/{userId}</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>/orderOther/query</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>/assurances/{assuranceId}/{orderId}/{typeIndex}</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>/adminbasic/configs</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>/adminbasic/prices</td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>/orderOther/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>/trainfoods</td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>/order/refresh</td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>/execute/collected/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>/register</td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>/contacts</td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>/orderOther/admin</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>/adminroute</td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>/login</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>/order/orderPay/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>/test_send_delivery</td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>/order/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>/order/status/{orderId}/{status}</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>/foods/{date}/{startStation}/{endStation}/{tripId}</td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>/routes/{startId}/{terminalId}</td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>/trains/welcome</td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>/orderOther/refresh</td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>/contacts/admin</td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>/trainfoods/welcome</td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>/securityConfigs/{accountId}</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>/assurances</td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>/contacts/welcome</td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>/orderOther/status/{orderId}/{status}</td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>/routes/{routeId}</td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>/assurances/types</td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>/generate</td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>/admintravel</td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>/order/security/{checkDate}/{accountId}</td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td>/orderOther</td>
+                        </tr>
+                        <tr>
+                            <td>66</td>
+                            <td>/adminbasic/stations</td>
+                        </tr>
+                        <tr>
+                            <td>67</td>
+                            <td>/test_send_mq</td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td>/orderOther/orderPay/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>69</td>
+                            <td>/adminbasic/contacts</td>
+                        </tr>
+                        <tr>
+                            <td>70</td>
+                            <td>/contacts/{contactsId}</td>
+                        </tr>
+                        <tr>
+                            <td>71</td>
+                            <td>/order/price/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>72</td>
+                            <td>/cancel/{orderId}/{loginId}</td>
+                        </tr>
+                        <tr>
+                            <td>73</td>
+                            <td>/orders</td>
+                        </tr>
+                        <tr>
+                            <td>74</td>
+                            <td>/order/admin</td>
+                        </tr>
+                        <tr>
+                            <td>75</td>
+                            <td>/execute/execute/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>76</td>
+                            <td>/order</td>
+                        </tr>
+                        <tr>
+                            <td>77</td>
+                            <td>/orderOther/price/{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>78</td>
+                            <td>/foodstores/{stationId}</td>
+                        </tr>
+                        <tr>
+                            <td>79</td>
+                            <td>/orderOther/security/{checkDate}/{accountId}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+    </div>
+
+    <div class="px-4">
+        <footer class="pt-5 my-5 text-muted border-top">𝜇Sensor &middot; &copy; 2022</footer>    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js" ></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
