@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Perform static source code analysis
-        uses: microsensorproject/microsensor@development
+        uses: microsensorproject/microsensor@Feat/Strangle_renderer_in_distributed_MFEs
