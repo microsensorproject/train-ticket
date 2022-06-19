@@ -1,0 +1,13 @@
+name: MicroSensor
+
+on: [push]
+
+jobs:
+  microsensor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out source code for analysis
+        uses: actions/checkout@v2
+
+      - name: Perform static source code analysis
+        uses: microsensorproject/microsensor@development
