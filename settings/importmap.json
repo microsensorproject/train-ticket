@@ -1,5 +1,5 @@
 {
   "imports": {
-    "@microsensor/root-config": ".github.io//microsensor-root-config.js"
+    "@microsensor/root-config": "microsensorproject.github.io/train-ticket/microsensor-root-config.js"
   }
 }
