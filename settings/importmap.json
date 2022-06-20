@@ -1,5 +1,5 @@
 {
   "imports": {
-    "@microsensor/root-config": "http://localhost:9000/microsensor-root-config.js"
+    "@microsensor/root-config": ".github.io//microsensor-root-config.js"
   }
 }
